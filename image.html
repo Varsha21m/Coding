@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Image Gallery & Auto Slideshow</title>
+  <link rel="stylesheet" href="image.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header style="margin-bottom: 28px;">
+      <h1>Image Gallery & Auto Slideshow</h1>
+    </header>
+
+    <div class="row">
+      <section id="gallery" class="card col-7" aria-label="Basic CSS image gallery with click-to-enlarge">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap;">
+          <h2>1) Click-to-Enlarge Gallery</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <a class="thumb" href="#img1"><img alt="Mountain" src="mountain.jpg" /></a>
+          <a class="thumb" href="#img2"><img alt="Forest" src="forest.jpg" /></a>
+          <a class="thumb" href="#img3"><img alt="Sea" src="sea.jpg" /></a>
+          <a class="thumb" href="#img4"><img alt="City" src="city.jpg" /></a>
+          <a class="thumb" href="#img5"><img alt="Canyon" src="canyon.jpg" /></a>
+          <a class="thumb" href="#img6"><img alt="Bridge" src="bridge.jpg" /></a>
+        </div>
+
+        <div id="img1" class="lightbox">
+          <a class="close" href="#gallery">×</a>
+          <figure>
+            <img src="mountain.jpg" alt="Mountain large" />
+            <figcaption class="caption">Mountain</figcaption>
+          </figure>
+        </div>
+        <div id="img2" class="lightbox">
+          <a class="close" href="#gallery">×</a>
+          <figure>
+            <img src="forest.jpg" alt="Forest large" />
+            <figcaption class="caption">Forest</figcaption>
+          </figure>
+        </div>
+        <div id="img3" class="lightbox">
+          <a class="close" href="#gallery">×</a>
+          <figure>
+            <img src="sea.jpg" alt="Sea large" />
+            <figcaption class="caption">Sea</figcaption>
+          </figure>
+        </div>
+        <div id="img4" class="lightbox">
+          <a class="close" href="#gallery">×</a>
+          <figure>
+            <img src="city.jpg" alt="City large" />
+            <figcaption class="caption">City</figcaption>
+          </figure>
+        </div>
+        <div id="img5" class="lightbox">
+          <a class="close" href="#gallery">×</a>
+          <figure>
+            <img src="canyon.jpg" alt="Canyon large" />
+            <figcaption class="caption">Canyon</figcaption>
+          </figure>
+        </div>
+        <div id="img6" class="lightbox">
+          <a class="close" href="#gallery">×</a>
+          <figure>
+            <img src="bridge.jpg" alt="Bridge large" />
+            <figcaption class="caption">Bridge</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="card col-5" aria-label="Auto-playing CSS slideshow">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap;">
+          <h2>2) Auto Slideshow</h2>
+        </div>
+
+        <div class="slideshow">
+          <figure>
+            <img src="https://picsum.photos/id/1036/1200/800" alt="Slideshow image 1" />
+            <figcaption>Sunlit cliffs</figcaption>
+          </figure>
+          <figure>
+            <img src="https://picsum.photos/id/1041/1200/800" alt="Slideshow image 2" />
+            <figcaption>Quiet lake</figcaption>
+          </figure>
+          <figure>
+            <img src="https://picsum.photos/id/1056/1200/800" alt="Slideshow image 3" />
+            <figcaption>Winding road</figcaption>
+          </figure>
+          <figure>
+            <img src="https://picsum.photos/id/1069/1200/800" alt="Slideshow image 4" />
+            <figcaption>Desert dusk</figcaption>
+          </figure>
+        </div>
+      </section>
+    </div>
+
+    <section class="card" style="margin-top:18px;">
+      <h2>How it works:</h2>
+      <ol>
+        <li>The Click-to-Enlarge gallery expands the picture when you click it.</li>
+        <li>The Auto-Slideshow displays a slideshow to pictures.</li>
+      </ol>
+    </section>
+  </div>
+</body>
+</html>

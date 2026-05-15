@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Glasses Try-On 👓</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🕶️ Real-Time Glasses Try-On</h1>
+
+  <video id="video" autoplay playsinline></video>
+  <canvas id="canvas"></canvas>
+
+  <div class="controls">
+    <label for="accessorySelect">Choose your style:</label>
+    <select id="accessorySelect">
+      <option value="none">Select Glasses</option>
+      <option value="1.png">1</option>
+      <option value="2.png">2</option>
+      <option value="3.png">3</option>
+      <option value="4.png">4</option>
+      <option value="5.png">5</option>
+      <option value="6.png">6</option>
+    </select>
+  </div>
+
+  <!-- Mediapipe face detection libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh@0.4/face_mesh.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
